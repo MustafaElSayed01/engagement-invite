@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#E8D8E8" />
+    <meta name="description" content="دعوة خطوبة نور الدين ومريم" />
+    <title>نور الدين & مريم | دعوة الخطوبة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-noise"></div>
+
+    <div id="envelope" class="envelope-screen" aria-label="فتح الدعوة">
+      <div class="ornament ornament-top">۞</div>
+      <div class="envelope-wrap">
+        <div class="envelope-back">
+          <div class="envelope-pattern"></div>
+          <div class="envelope-card">
+            <img
+              src="assets/islamic-invitation.jpg"
+              alt="تصميم الدعوة الإسلامية"
+              class="cover-image"
+            />
+          </div>
+          <div class="envelope-flap"></div>
+          <button
+            id="openInvite"
+            class="seal"
+            type="button"
+            aria-label="فتح الدعوة"
+          >
+            بسم الله
+          </button>
+        </div>
+      </div>
+      <p class="open-hint">اضغط لفتح الدعوة</p>
+    </div>
+
+    <header class="hero section">
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
+      <div class="floating-orb orb-one">✦</div>
+      <div class="floating-orb orb-two">۞</div>
+
+      <button id="musicBtn" class="music-btn" type="button" hidden>
+        ♪ <span>تشغيل الموسيقى</span>
+      </button>
+
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+          <div class="gold-divider"><span></span> ❦ <span></span></div>
+          <p class="eyebrow">بكل حب وسعادة</p>
+          <h1>
+            <span id="groomName">نور الدين</span><b>&</b
+            ><span id="brideName">مريم</span>
+          </h1>
+          <p class="lead">
+            يسعدنا دعوتكم لمشاركتنا فرحة <strong>خطوبتنا</strong>، وأن تكونوا
+            معنا في بداية فصل جديد من حياتنا.
+          </p>
+          <div class="verse">
+            <p>
+              ﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+              لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾
+            </p>
+            <small>الروم: 21</small>
+          </div>
+        </div>
+
+        <div class="hero-art reveal delay-1">
+          <div class="art-frame">
+            <img
+              src="assets/couple-illustration.jpg"
+              alt="رسم فني مستوحى من أجواء الخطوبة"
+              loading="eager"
+            />
+          </div>
+          <div class="art-caption">بداية جميلة تجمع قلبين</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="countdown-section section">
+        <div class="section-heading reveal">
+          <span>✦</span>
+          <h2>العد التنازلي للخطوبة</h2>
+          <span>✦</span>
+        </div>
+        <div id="countdown" class="countdown reveal delay-1">
+          <div class="count-box">
+            <strong data-unit="days">00</strong><span>يوم</span>
+          </div>
+          <div class="count-box">
+            <strong data-unit="hours">00</strong><span>ساعة</span>
+          </div>
+          <div class="count-box">
+            <strong data-unit="minutes">00</strong><span>دقيقة</span>
+          </div>
+          <div class="count-box">
+            <strong data-unit="seconds">00</strong><span>ثانية</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="details section">
+        <div class="section-heading reveal">
+          <span>✦</span>
+          <h2>تفاصيل المناسبة</h2>
+          <span>✦</span>
+        </div>
+        <div class="details-grid">
+          <article class="detail-card reveal">
+            <div class="detail-icon">❦</div>
+            <span>التاريخ</span><strong id="eventDate">—</strong>
+          </article>
+          <article class="detail-card reveal delay-1">
+            <div class="detail-icon">◷</div>
+            <span>الوقت</span><strong id="eventTime">—</strong>
+          </article>
+          <article class="detail-card reveal delay-2">
+            <div class="detail-icon">⌖</div>
+            <span>المكان</span><strong id="eventVenue">—</strong
+            ><small id="eventCity">—</small>
+          </article>
+        </div>
+        <a id="mapLink" class="map-btn" href="#" target="_blank" rel="noopener"
+          >⌖ عرض الموقع على الخريطة</a
+        >
+      </section>
+
+      <section class="blessing section">
+        <div class="blessing-card reveal">
+          <div class="mini-ornament">۞</div>
+          <p>
+            اللهم بارك لهما وبارك عليهما، واجمع بينهما في خير، واجعل خطوبتهما
+            بداية مودة ورحمة وسكينة.
+          </p>
+          <span>♥</span>
+        </div>
+      </section>
+
+      <section class="rsvp section" id="rsvp">
+        <div class="section-heading reveal">
+          <span>✦</span>
+          <h2>تأكيد الحضور</h2>
+          <span>✦</span>
+        </div>
+        <p class="section-subtitle reveal">
+          يسعدنا تأكيد حضوركم لمشاركتنا هذه المناسبة الجميلة.
+        </p>
+
+        <form id="rsvpForm" class="rsvp-form reveal delay-1">
+          <label
+            >الاسم الكامل<input
+              name="name"
+              required
+              maxlength="100"
+              placeholder="اكتب اسمك هنا"
+          /></label>
+          <label
+            >عدد المرافقين<input
+              name="guests"
+              type="number"
+              min="1"
+              max="10"
+              value="1"
+              required
+          /></label>
+          <label
+            >هل ستحضر؟
+            <select name="attendance" required>
+              <option value="yes">بإذن الله، سأحضر</option>
+              <option value="no">أعتذر، لن أتمكن من الحضور</option>
+            </select>
+          </label>
+          <label class="full"
+            >رسالة (اختياري)<textarea
+              name="message"
+              maxlength="500"
+              placeholder="اكتب لنا كلمة جميلة..."
+            ></textarea>
+          </label>
+          <button class="submit-btn" type="submit">
+            تأكيد الحضور <span>✓</span>
+          </button>
+          <p id="formStatus" class="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="footer-ornament">❦</div>
+      <strong id="footerNames">نور الدين & مريم</strong>
+      <span>بإنتظاركم</span>
+      <div class="footer-ornament">❦</div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
